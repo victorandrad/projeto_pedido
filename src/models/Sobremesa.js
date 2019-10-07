@@ -15,11 +15,11 @@ const SobremesaSchema = new Schema({
         preco: Number,
         imagem: {
             type: String,
-            required: [true, 'O nome do produto é obrigatório']
+            required: [true, 'A imagem do produto é obrigatória']
         },
         pais_origem: {
             type: String,
-            required: [true, 'O nome do produto é obrigatório']
+            required: [true, 'O pais de origem é obrigatório']
         },
     },
     {

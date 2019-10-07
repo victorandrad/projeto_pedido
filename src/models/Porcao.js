@@ -15,11 +15,12 @@ const PorcaoSchema = new Schema({
         preco: Number,
         imagem: {
             type: String,
-            required: [true, 'O nome do produto é obrigatório']
+            required: [true, 'A imagem do produto é obrigatória']
         },
         tamanho: [{
             type: Schema.Types.ObjectId,
-            ref: 'TamanhoPorcao'
+            ref: 'TamanhoPorcao',
+            required: [true, 'O tamanho da porção é obrigatório']
         }],
     },
     {

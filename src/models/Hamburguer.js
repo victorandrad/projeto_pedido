@@ -15,11 +15,12 @@ const HamburguerSchema = new Schema({
         preco: Number,
         imagem: {
             type: String,
-            required: [true, 'O nome do produto é obrigatório']
+            required: [true, 'A imagem do produto é obrigatória']
         },
         ponto_carne: [{
             type: Schema.Types.ObjectId,
-            ref: 'PontoCarne'
+            ref: 'PontoCarne',
+            required: [true, 'O ponto da carne é obrigatório']
         }],
     },
     {

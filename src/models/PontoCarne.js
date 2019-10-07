@@ -5,7 +5,7 @@ const PontoCarneSchema = new Schema({
             type: String,
             minlength: [1, 'O nome é muito curto'],
             maxlength: [30, 'O nome é muito longo'],
-            required: [true, 'O nome do produto é obrigatório']
+            required: [true, 'O nome do ponto da carne é obrigatória']
         },
     },
     {

@@ -4,7 +4,7 @@ const TamanhoPorcaoSchema = new Schema({
         nome: {
             type: String,
             maxlength: [1, 'O nome é muito longo'],
-            required: [true, 'O nome do produto é obrigatório']
+            required: [true, 'O nome do tamanho da porção é obrigatório']
         },
     },
     {
