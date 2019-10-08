@@ -77,7 +77,7 @@ module.exports = {
 
         let {nome} = req.body;
 
-        await PontoCarne.updateOne({_id: id}, {nome}).then(data => {
+        await PontoCarne.updateOne({_id: id}, {nome}, {runValidators: true}).then(data => {
 
             return res.status(200).json(
                 {

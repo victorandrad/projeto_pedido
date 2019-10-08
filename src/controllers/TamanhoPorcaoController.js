@@ -77,7 +77,7 @@ module.exports = {
 
         let {nome} = req.body;
 
-        await TamanhoPorcao.updateOne({_id: id}, {nome}).then(data => {
+        await TamanhoPorcao.updateOne({_id: id}, {nome}, {runValidators: true}).then(data => {
 
             return res.status(200).json(
                 {
