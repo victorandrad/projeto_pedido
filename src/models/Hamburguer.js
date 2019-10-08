@@ -10,7 +10,7 @@ const HamburguerSchema = new Schema({
         descricao: {
             type: String,
             maxlength: [1000, 'A descrição é muito longa'],
-            required: false
+            required: true
         },
         preco: Number,
         imagem: {
