@@ -81,7 +81,7 @@ module.exports = {
 
         let {nome, descricao, preco, imagem, ponto_carne} = req.body;
 
-        await Hamburguer.update({_id: id}, {
+        await Hamburguer.updateOne({_id: id}, {
             nome,
             descricao,
             preco,
