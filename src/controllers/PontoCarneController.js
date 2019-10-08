@@ -82,7 +82,7 @@ module.exports = {
             return res.status(200).json(
                 {
                     success: true,
-                    message: 'Tamanho alterado com sucesso'
+                    message: 'Ponto da carne alterado com sucesso'
                 }
             );
 
@@ -90,7 +90,7 @@ module.exports = {
             return res.status(200).json(
                 {
                     success: false,
-                    message: 'Erro ao alterar tamanho'
+                    message: 'Erro ao alterar ponto da carne'
                 }
             );
         });
